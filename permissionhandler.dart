@@ -1,3 +1,10 @@
+dependencies:
+  cupertino_icons: ^1.0.2
+  flutter:
+    sdk: flutter
+  permission_handler 10.4.3   // Add this package in your pubspec.yaml
+
+      
 import 'package:flutter/material.dart';
 import 'package:permission_handler/permission_handler.dart';
 
