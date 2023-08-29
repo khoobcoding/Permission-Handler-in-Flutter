@@ -4,6 +4,30 @@ dependencies:
     sdk: flutter
   permission_handler 10.4.3   // Add this package in your pubspec.yaml
 
+----------------- Android Device Permission-------------------
+ //Add all the Permissions below package
+package="com.example.searchingapp"> //below this line
+      
+          <!-- Android 12 or below  -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <!-- Android 13 or greater  -->
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.Camera"/>
+      
+------------------- IOS Device Permission---------------------
+     // Add all the Permissions in between  </dict> </dict>
+      
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>photo lib for profile images</string>
+    <key>NSCameraUsageDescription</key>
+    <string>capture profile photo </string>
+
       
 import 'package:flutter/material.dart';
 import 'package:permission_handler/permission_handler.dart';
